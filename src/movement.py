@@ -5,7 +5,7 @@ This module turns simple robot actions like "move forward" or "turn left"
 into left/right motor speed commands.
 """
 
-from motors import MotorController
+from src.motors import MotorController
 
 
 class RobotMovement:

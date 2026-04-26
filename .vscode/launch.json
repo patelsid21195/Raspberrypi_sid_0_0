@@ -2,10 +2,19 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run main.py",
+      "name": "Run robot main",
       "type": "debugpy",
       "request": "launch",
-      "program": "${workspaceFolder}/src/main.py",
+      "module":"src.main",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Run robot tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module":"pytest",
+      "args": ["tests"],
       "console": "integratedTerminal",
       "cwd": "${workspaceFolder}"
     }

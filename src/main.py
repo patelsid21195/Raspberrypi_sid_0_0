@@ -11,8 +11,8 @@ This script tests basic movement commands:
 
 import time
 
-from motors import MotorController
-from movement import RobotMovement
+from src.motors import MotorController
+from src.movement import RobotMovement
 
 
 def main() -> None:
